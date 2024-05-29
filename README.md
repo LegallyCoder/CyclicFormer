@@ -12,3 +12,52 @@ After examining existing transformer implementations, I intentionally avoided se
 
 # Working Mechanism:
 ![](https://github.com/LegallyCoder/CyclicFormer/assets/119312866/5fe31a39-33f0-4ff1-b89c-de4b424f1373)
+
+# Usage:
+To use the **CyclicFormer**, follow these steps:
+
+1. Clone the repository to your local machine.
+   
+```bash
+git clone https://github.com/LegallyCoder/CyclicFormer
+```
+2. Open a terminal or command prompt and navigate to the script's directory.
+```bash
+cd src
+```
+
+3. Install the required packages using this command:
+
+```bash
+pip3 install -r requirements.txt
+```
+
+4. Open new python file at the script's directory.
+```python
+from modeling_cyclicformer import CyclicFormerForCausalLM
+from transformers import AutoTokenizer
+
+model = CyclicFormerForCausalLM.from_pretrained('Q-bert/CyclicFormer-10M')
+tokenizer = AutoTokenizer.from_pretrained('Q-bert/CyclicFormer-10M')
+
+text = "Hi"
+
+input_ids = tokenizer.encode(text, return_tensors="pt")
+
+output = model.generate(input_ids, max_length=20, num_beams=5, no_repeat_ngram_size=2)
+
+generated_text = tokenizer.decode(output[0], skip_special_tokens=True)
+
+print(generated_text)
+
+```
+
+# For more:
+
+You can reach me on,
+
+[Linkedin](https://www.linkedin.com/in/talha-r%C3%BCzgar-akku%C5%9F-1b5457264/)
+
+[Twitter](https://x.com/TalhaRuzga35606)
+
+[Hugging Face](https://huggingface.co/Q-bert)
