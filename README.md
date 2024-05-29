@@ -1,7 +1,8 @@
 # CyclicFormer
-![LogoCyc](https://github.com/LegallyCoder/CyclicFormer/assets/119312866/c8c4b941-471d-44b7-95d3-3da146652cdd)
+<img src="https://github.com/LegallyCoder/CyclicFormer/assets/119312866/c8c4b941-471d-44b7-95d3-3da146652cdd" width="500" height="500" alt="cyclicformer">
 
 Implementation of the CyclicFormer architecture with hf_integration. 
+
 This architecture created by Talha Rüzgar Akkuş.
 
 # History Of Development CyclicFormer:
