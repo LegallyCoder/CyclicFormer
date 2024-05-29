@@ -217,6 +217,7 @@ class CyclicFormerForCausalLM(CyclicFormerPreTrainedModel):
                 input_ids: torch.LongTensor = None,
                 labels: Optional[torch.LongTensor] = None,
                 attention_mask: Optional[torch.FloatTensor] = None,
+                output_attentions: Optional[bool] = None,
                 output_hidden_states: Optional[bool] = None,
                 return_dict: Optional[bool] = None,
                 )-> Union[Tuple, CausalLMOutputWithPast]:
