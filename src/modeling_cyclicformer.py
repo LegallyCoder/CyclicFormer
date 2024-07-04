@@ -175,7 +175,7 @@ class CyclicFormerModel(CyclicFormerPreTrainedModel):
         x = self.embed_tokens(input_ids)
         c = 0
         all_hidden_states = list()
-        cyclic_attentions = torch.zeros(self.n_loop, self.config.num_hidden_layers, input_ids.shape[0], input_ids.shape[1], self.config.cyclic_size)
+        cyclic_attentions = torch.zeros(self.n_loop, self.config.num_hidden_layers, input_ids.shape[0], input_ids.shape[1], self.config.cyclic_size, device = input_ids.device)
         for i in range(self.n_loop):
           z = 0
           for layer in self.layers:
