@@ -37,8 +37,8 @@ pip3 install -r requirements.txt
 from modeling_cyclicformer import CyclicFormerForCausalLM
 from transformers import AutoTokenizer
 
-model = CyclicFormerForCausalLM.from_pretrained('Q-bert/CyclicFormer-10M')
-tokenizer = AutoTokenizer.from_pretrained('Q-bert/CyclicFormer-10M')
+model = CyclicFormerForCausalLM.from_pretrained('Q-bert/CyclicFormer-tiny-shakespeare')
+tokenizer = AutoTokenizer.from_pretrained('gpt2')
 
 text = "Hi"
 
