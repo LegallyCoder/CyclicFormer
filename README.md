@@ -51,6 +51,8 @@ generated_text = tokenizer.decode(output[0], skip_special_tokens=True)
 print(generated_text)
 
 ```
+# Training Code:
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1N3mUN-pciblcNMHmysyiUDDYWaI58ePg?usp=sharing)
 
 # For more:
 
